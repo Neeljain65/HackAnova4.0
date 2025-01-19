@@ -10,7 +10,7 @@ const ImageClipBox = ({ src, clipClass }) => (
 
 const Contact = () => {
   return (
-    <div id="contact" className="mt-20 min-h-96 w-screen bg-gradient-to-b from-black via-black to-orange-900 ">
+    <div id="contact" className="mt-20 min-h-96 w-screen bg-gradient-to-b from-black via-black to-purple-900 ">
       <div className="relative rounded-lg  py-24 text-blue-50 sm:overflow-hidden">
       
 

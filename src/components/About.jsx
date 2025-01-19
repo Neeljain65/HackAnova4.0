@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/all";
 import AnimatedTitle, { SAnimatedTitle } from "./AnimatedTitle";
 
 import CardGallery from "./Bento";
+import {  BentoGridThirdDemo } from "./Facts";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -39,7 +40,7 @@ const About = () => {
   return (
     <div id="about" className=" w-screen">
      
-        <div className="z- mb-12 mt-36 flex flex-col items-center gap-5  ">
+        <div className="z- mb-24 mt-52 flex flex-col items-center gap-5  ">
        {/* <div className="z-10 before:bg-[radial-gradient(50%_100%,#8E24AA,transparent)] relative before:absolute before:inset-[-10%_-2%] before:-z-10 before:blur-3xl before:rounded-t-full"> */}
        <SAnimatedTitle
             title="18-19th J<b>A</b>NUARY 2025"
@@ -53,7 +54,7 @@ const About = () => {
        {/* </div> */}
      
         </div>
-<CardGallery/>
+<BentoGridThirdDemo/>
         <div className="h-dvh w-screen" id="clip">
           <div className="mask-clip-path about-image">
             <img

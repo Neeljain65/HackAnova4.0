@@ -1,7 +1,8 @@
 import { useState, useRef } from "react";
 import { TiLocationArrow } from "react-icons/ti";
-
 import Slider from "./Slider/Slider";
+import { FaqTeachers } from "./faq.jsx";
+import { faqs } from "../lib/data";
 
 export const BentoTilt = ({ children, className = "" }) => {
   const [transformStyle, setTransformStyle] = useState("");
@@ -158,6 +159,12 @@ const Features = () => (
       </div>
     </div>
     <Slider/>
+    <div className=" flex lg:mx-52 mt-24 mx-8">
+    <div className="container z-10 relative before:absolute before:bg-gradient-to-b from-purple-600 via-purple-800 to-black  before:-inset-2 before:-z-10 before:blur-3xl before:round-[inherit]">
+		
+    <FaqTeachers faqs={faqs}/>
+		</div>
+    </div>
   </section>
 );
 
