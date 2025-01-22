@@ -64,21 +64,21 @@ const SkeletonOne = () => {
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2">
       <motion.div
         variants={variants}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-white dark:bg-black">
+        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-black">
         <div
           className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
         <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
       </motion.div>
       <motion.div
         variants={variantsSecond}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 w-3/4 ml-auto bg-white dark:bg-black">
+        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 w-3/4 ml-auto bg-black">
         <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
         <div
           className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
       </motion.div>
       <motion.div
         variants={variants}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-white dark:bg-black">
+        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center space-x-2 bg-black">
         <div
           className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
         <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
@@ -111,6 +111,7 @@ const SkeletonTwo = () => {
       animate="animate"
       whileHover="hover"
       className="flex flex-1 p-5 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2">
+      
       </motion.div>)
   );
 };
@@ -173,7 +174,7 @@ const SkeletonFour = () => {
       
       <motion.div
         variants={first}
-        className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200  flex flex-col items-center justify-center">
+        className="h-full w-1/3 rounded-2xl  p-4 bg-black dark:border-white/[0.1] border border-neutral-200  flex flex-col items-center justify-center">
           
         <img
           src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
@@ -192,7 +193,7 @@ const SkeletonFour = () => {
         </p>
       </motion.div>
       <motion.div
-        className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-pink-400 flex flex-col items-center justify-center">
+        className="h-full relative z-20 w-1/3 rounded-2xl  p-4 bg-black dark:border-white/[0.1] border border-pink-400 flex flex-col items-center justify-center">
         <img
           src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
           alt="avatar"
@@ -210,7 +211,7 @@ const SkeletonFour = () => {
       </motion.div>
       <motion.div
         variants={second}
-        className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
+        className="h-full w-1/3 rounded-2xl  p-4 bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
         <img
           src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
           alt="avatar"
