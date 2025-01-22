@@ -14,7 +14,7 @@ function App() {
       <NavBar />
       
       <About />
-      {/* <CardGallery /> */}
+     
       <TimelineDemo/>
       <CanvasRevealEffectDemo/>
       

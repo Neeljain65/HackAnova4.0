@@ -7,7 +7,7 @@ import { CanvasRevealEffect } from "./ui/canvas-reveal-effect";
 export function CanvasRevealEffectDemo() {
   return (<>
     <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}
-      className="py-20 mt-5 mb-10 grid lg:grid-cols-[repeat(3,1fr)] *:aspect-square bg-[radial-gradient(circle,purple,transparent_35%)] bg-white dark:bg-black w-full lg:gap-24 gap-12 max-w-screen-lg mx-auto lg:px-5 px-12">
+      className="py-20 mt-5 mb-10 grid lg:grid-cols-[repeat(3,1fr)] *:aspect-square bg-[radial-gradient(circle,purple,transparent_35%)] bg-black w-full lg:gap-24 gap-12 max-w-screen-lg mx-auto lg:px-5 px-12">
       <Card  title="Sheetal is Nisha" icon={<AceternityIcon />}>
         <CanvasRevealEffect animationSpeed={5.1} containerClassName="bg-emerald-900" />
       </Card>
