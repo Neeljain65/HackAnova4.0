@@ -14,7 +14,7 @@ function Faq({ question, answer, isActive, handleClick  }) {
 			}`}
 		>
 			<div className="flex justify-between items-center w-full rounded-3xl">
-				<p className={`lg:text-xl  font-bold ${isActive?"text-white":"text-slate-900"} transition-colors duration-300`}>{question}</p>
+				<p className={`w-4/5 lg:text-xl  font-bold ${isActive?"text-white":"text-slate-900"} transition-colors duration-300`}>{question}</p>
 				<div className="size-14 grid place-items-center bg-white rounded-full text-[#030F40]">
 					<ArrowDownRight
 						className={`transition-transform duration-300 ${

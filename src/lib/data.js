@@ -35,38 +35,43 @@ export const items = [
 	// Photo by Simone Hutsch on Unsplash
 ]
 
-export  const  faqs = [
+export const faqs = [
 	{
-	  question: "What is your name?",
-	  answer: "My name is Milind Pithadia."
+		question: "Is this hackathon an online event or offline?",
+		answer: "Hackvanova 4.0 is an offline event."
 	},
 	{
-	  question: "Where are you based?",
-	  answer: "I am based in Mumbai, Maharashtra, India."
+		question: "Who is eligible to apply?",
+		answer: "Anyone with a passion for solving problems and innovation can apply. Specific eligibility criteria may vary by event."
 	},
 	{
-	  question: "What are your skills?",
-	  answer: "I have skills in C, Java, Python, HTML/CSS, JavaScript, TypeScript, SQL, ReactJS, NextJS, and TailwindCSS, with experience in frontend web development."
+		question: "Is there any registration fee?",
+		answer: "No, there is no registration fee for participating in Hackanova 4.0."
 	},
 	{
-	  question: "What is your academic background?",
-	  answer: "I am pursuing a B.Tech in Information Technology from Dwarkadas J. Sanghvi College of Engineering with an 8.12 CGPA."
+		question: "What are the selection criteria?",
+		answer: "Selection is based on the creativity and feasibility of your idea as mentioned during registration."
+	},
+	
+
+	{
+		question: "What are the perks of participating in this hackathon?",
+		answer: "Participants get networking opportunities, mentorship, prizes for winners, and the chance to work on innovative solutions."
+	},
+	
+	{
+		question: "Can I start working on my hack before the event?",
+		answer: "No, all development must begin after the event officially starts to ensure fairness."
 	},
 	{
-	  question: "What are your significant achievements?",
-	  answer: "I have been a finalist in multiple hackathons and built projects like Insightify, ThinQ, RakshakRita, and WeatherCase."
+		question: "Will accommodation and food be provided?",
+		answer: "Yes, accommodation and meals will be provided to all participants during the hackathon."
 	},
+	
 	{
-	  question: "What was your recent internship?",
-	  answer: "I recently completed a frontend developer internship at Testkart, where I built responsive pages, added animations and effects, and refactored code across multiple projects."
-	},
-	{
-	  question: "What projects are you currently working on?",
-	  answer: "I am working on BentoCase, a bento grid maker using shadcn's resizable component."
-	},
-	{
-	  question: "What is your passion in technology?",
-	  answer: "I am passionate about frontend development and building user-friendly, scalable web applications."
+		question: "Where will the hackathon be held?",
+		answer: "Hackverse 5.0 will be held at a designated venue, which will be communicated to selected participants."
 	}
-  ];
+];
+
 export const openSpring = { type: "spring", stiffness: 200, damping: 30 }

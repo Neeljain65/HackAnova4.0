@@ -1,7 +1,9 @@
 
+import { BsDiscord, BsInstagram, BsYoutube } from "react-icons/bs";
 import AnimatedTitle from "./AnimatedTitle";
 import Button from "./Button";
 import { motion } from "framer-motion";
+import { Youtube } from "lucide-react";
 const ImageClipBox = ({ src, clipClass }) => (
   <div className={clipClass}>
     <img src={src} />
@@ -17,29 +19,36 @@ const Contact = () => {
         <div className="flex flex-row items-center justify-center gap-5 text-center">
          
           <p className="text-xl">Still Got Questions</p>
+          <a href="mailto:nj6097114@gmail.com?subject=Hackanova%20Quries">
+
           <Button title="contact us" containerClass=" cursor-pointer" />
+          </a>
         </div>
         <div className="flex flex-col justify-center items-center mt-10" >
          <AnimatedTitle title="Hackanova 4.0" />
-          <p className="text-center text-orange-500 text-lg mt-5">
-          Imagine. Believe. Achieve!
-          </p>
-          <p className="text-center text-lg mt-5">TCET</p>
-          <p className="text-center text-lg mt-5">
-            Mumbai, India
-          </p>
+         
         </div>
+        <div className="gap-5 flex justify-center">
+          <a href="https://www.instagram.com/tsdw_tcet?igsh=eXN1NDdyNjd5cG8z">
+          <BsInstagram className="text-2xl text-white"  />
+          </a>
+          <a target="blank" href="https://www.youtube.com/@tcet_tsdw" >
+          <BsYoutube className="text-2xl text-white" />
+          
+          </a>
+          <a href="">
+          <BsDiscord className="text-2xl text-white"  />
+        
+          </a>
+          </div>
       </div>
       <footer className="w-screen  py-4 text-white bg-transparent">
-      <div className="container  flex flex-col justify-center gap-4 px-4 md:flex-row">
       
-
-        <div className="flex justify-center text-center gap-4  md:justify-start">
-        © 2024 All rights reserved | Made with ❤ by the Hackanova Team
+        <div className="text-center gap-4  md:justify-start">
+        © 2025 All rights reserved | Made with ❤ by the Hackanova Team
         </div>
 
-        
-      </div>
+      
     </footer>
     </div>
   );

@@ -42,7 +42,7 @@ export const BentoTilt = ({ children, className = "" }) => {
   );
 };
 
-export const BentoCard = ({ src, title, description, isComingSoon }) => {
+export const BentoCard = ({ src,dlink, title, description, isComingSoon }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [hoverOpacity, setHoverOpacity] = useState(0);
   const hoverButtonRef = useRef(null);
@@ -94,7 +94,9 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
               }}
             />
             <TiLocationArrow className="relative z-20" />
-            <p className="relative z-20">coming soon</p>
+            <a href={dlink} target="_blank" >
+              <p className="relative z-20">Visit</p>
+            </a>
           </div>
         )}
       </div>
@@ -106,8 +108,8 @@ const Features = () => (
   <section className="mt-5">
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
-        <p className="font-circular-web text-center text-3xl   text-blue-50">
-         Meet Our Sponsors
+        <p className="font-circular-web text-center text-2xl lg:text-4xl font-bold   text-blue-50">
+         Meet Our <span className="bg-purple-800"> Sponsors</span>
         
         </p>
         <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
@@ -122,9 +124,10 @@ const Features = () => (
             src="videos/feature-2.mp4"
             title={
               <>
-                RedB<b>u</b>ll
+                Devfoli<b>o</b>
               </>
             }
+            dlink="https://devfolio.co/home/"
             description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
             isComingSoon
           />
@@ -135,9 +138,10 @@ const Features = () => (
             src="videos/feature-3.mp4"
             title={
               <>
-                n<b>e</b>xus
+                Polygon
               </>
             }
+            dlink="https://polygon.technology/"
             description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
             isComingSoon
           />
@@ -148,9 +152,10 @@ const Features = () => (
             src="videos/feature-4.mp4"
             title={
               <>
-                az<b>u</b>l
+              Replit
               </>
             }
+            dlink="https://replit.com/"
             description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
             isComingSoon
           />
@@ -171,8 +176,9 @@ const Features = () => (
     <div className="p-2 lg:w-2/5 mx-auto mt-24">
     <h1 className="text-5xl text-white font-bold text-center">Meet the Team</h1>
     <BentoGridItem 
-    title="The Developers"
-    description="The team behind the project"
+    title="TSDW Technical Team"
+    description="The TSDW Technical Team is the backbone of Hackanova, ensuring seamless execution with cutting-edge technologies and innovative solutions.
+From setting up platforms to troubleshooting in real-time, the team fosters a collaborative environment for an exceptional hackathon experience."
      className={"mt-5"}
     header=
     {

@@ -40,13 +40,13 @@ const About = () => {
   });
 
   return (
-    <div id="about" className="w-screen ">
+    <div id="about" className=" w-screen">
      
         <div className="z- mb-24 mt-52 flex flex-col items-center gap-2 ">
        {/* <div className="z-10 before:bg-[radial-gradient(50%_100%,#8E24AA,transparent)] relative before:absolute before:inset-[-10%_-2%] before:-z-10 before:blur-3xl before:rounded-t-full"> */}
        <SAnimatedTitle
             title="TSDW Presents"
-            containerClass="mt-5 !text-white   text-center"
+            containerClass="mt-5 !text-white  text-center"
           />
           <AnimatedTitle
             title="Hack<b>a</b>Nova 4.0"
@@ -62,13 +62,9 @@ const About = () => {
               containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
               />
               </div>
-              <div className=" flex justify-center overflow-x-clip px-2">
-
-              <div className=" flex justify-center overflow-x-clip px-2">
+              <div className=" flex justify-center  px-2">
 
 <BentoGridThirdDemo/>
-              </div>
-        {/* <div className="h-dvh w-screen" id="clip">
               </div>
         {/* <div className="h-dvh w-screen" id="clip">
           <div className="mask-clip-path about-image">
@@ -77,8 +73,8 @@ const About = () => {
               alt="Background"
               className="absolute left-0 top-0 size-full object-cover"
             />
-          </div>
-        </div> */}
+          </div> */}
+        {/* </div> */}
      
     </div>
   );
