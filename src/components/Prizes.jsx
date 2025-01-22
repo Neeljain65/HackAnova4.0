@@ -6,7 +6,7 @@ import { CanvasRevealEffect } from "./ui/canvas-reveal-effect";
 
 export function CanvasRevealEffectDemo() {
   return (<div id="prizes">
-  <h1 className="text-white text-center text-4xl font-bold"><span className="bg-purple-900 text-black">Prizes</span></h1>
+  <h1 className="text-white lg:mt-5 text-center lg:text-5xl text-4xl font-bold"><span className=" text-white">Prize Pool</span></h1>
     <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}
       className="py-20 mt-5 mb-10 grid lg:grid-cols-[repeat(3,1fr)] *:aspect-square bg-[radial-gradient(circle,purple,transparent_35%)] bg-black w-full lg:gap-24 gap-12 max-w-screen-lg mx-auto lg:px-5 px-12">
       <Card  title="20000₹" icon={<AceternityIcon2 />}>
@@ -101,7 +101,7 @@ const MidCard = ({
           {icon}
         </div>
         <h2
-          className="dark:text-white text-center text-2xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+          className="dark:text-white text-center text-3xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10 text-black mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
           {title}
         </h2>
       </div>
