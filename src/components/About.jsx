@@ -64,7 +64,11 @@ const About = () => {
               </div>
               <div className=" flex justify-center overflow-x-clip px-2">
 
+              <div className=" flex justify-center overflow-x-clip px-2">
+
 <BentoGridThirdDemo/>
+              </div>
+        {/* <div className="h-dvh w-screen" id="clip">
               </div>
         {/* <div className="h-dvh w-screen" id="clip">
           <div className="mask-clip-path about-image">
@@ -73,8 +77,8 @@ const About = () => {
               alt="Background"
               className="absolute left-0 top-0 size-full object-cover"
             />
-          </div>
-        </div> */}
+          </div> */}
+        {/* </div> */}
      
     </div>
   );
