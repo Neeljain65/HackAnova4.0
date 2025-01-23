@@ -4,7 +4,6 @@ import { useWindowScroll } from "react-use";
 import { useEffect, useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
 
-import Button from "./Button";
 
 const navItems = ["Home",  "About", "Timeline", "Prizes", "Contact"];
 
@@ -71,7 +70,7 @@ const NavBar = () => {
         <nav className="flex size-full items-center justify-between p-4">
           {/* Logo and Product button */}
           <div className="flex items-center gap-7">
-            <img src="/img/logo.png" alt="logo" className="w-10" />
+            <img src="/img/TSDW.png" alt="logo" className="w-24 drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]" />
 
             
           </div>

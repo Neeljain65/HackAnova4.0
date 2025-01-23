@@ -9,7 +9,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p
-            className="text-neutral-800 dark:text-neutral-200 ">
+            className="text-neutral-200 ">
            Registration Commences
           </p>
           
@@ -22,7 +22,7 @@ export function TimelineDemo() {
         <div>
           
           <p
-            className="text-neutral-800 dark:text-neutral-200 ">
+            className="text-neutral-200 ">
            Online Idea Submission</p>
           
         </div>
@@ -33,7 +33,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p
-            className="text-neutral-800 dark:text-neutral-200 ">
+            className="text-neutral-200 ">
             Shortlisted Teams Announced
           </p>
 
@@ -45,7 +45,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p
-            className="text-neutral-800 dark:text-neutral-200 ">
+            className="text-neutral-200 ">
             Final Round of Competition
           </p>
 

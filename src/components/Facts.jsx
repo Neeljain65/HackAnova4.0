@@ -66,14 +66,14 @@ const SkeletonOne = () => {
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2 justify-center items-center"
     >
       <div className="flex flex-col items-start text-left gap-2">
-        <p className="text-xl flex flex-col gap-2 md:text-4xl lg:text-5xl font-bold text-white">
+        <p className="text-5xl flex flex-col gap-2 md:text-4xl lg:text-5xl font-bold text-white">
           Redefining
           <p className="bg-gradient-to-r from-orange-500 to-purple-800 bg-clip-text text-transparent">
             Norms
           </p>
         </p>
         <p className="text-5xl font-bold text-white">Through</p>
-        <p className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mt-2">
+        <p className="text-5xl md:text-4xl lg:text-5xl font-bold text-white mt-2">
           Intelligence
         </p>
       </div>

@@ -4,7 +4,6 @@ import NavBar from "./components/Navbar";
 import Features from "./components/Features";
 
 import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 import { TimelineDemo } from "./components/TimeLine";
 import { CanvasRevealEffectDemo } from "./components/Prizes";
 
