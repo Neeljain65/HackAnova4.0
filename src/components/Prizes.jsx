@@ -9,10 +9,10 @@ export function CanvasRevealEffectDemo() {
   <h1 className="text-white lg:mt-5 text-center lg:text-5xl text-4xl font-bold"><span className=" text-white">Prize Pool</span></h1>
     <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}
       className="py-20 mt-5 mb-10 grid lg:grid-cols-[repeat(3,1fr)] *:aspect-square bg-[radial-gradient(circle,purple,transparent_35%)] bg-black w-full lg:gap-24 gap-12 max-w-screen-lg mx-auto lg:px-5 px-12">
-      <Card  title="20000₹" icon={<AceternityIcon2 />}>
+      <Card  title="₹20000" icon={<AceternityIcon2 />}>
         <CanvasRevealEffect animationSpeed={5.1} containerClassName="bg-emerald-900" />
       </Card>
-      <MidCard  title="30000₹" icon={<AceternityIcon />}>
+      <MidCard  title="₹30000" icon={<AceternityIcon />}>
         <CanvasRevealEffect
           animationSpeed={3}
           containerClassName="bg-black"
@@ -23,7 +23,7 @@ export function CanvasRevealEffectDemo() {
           dotSize={2} />
         {/* Radial gradient for the cute fade */}
       </MidCard>
-      <Card  title="10000₹" icon={<AceternityIcon3 />}>
+      <Card  title="₹10000" icon={<AceternityIcon3 />}>
         <CanvasRevealEffect
           animationSpeed={3}
           containerClassName="bg-sky-600"

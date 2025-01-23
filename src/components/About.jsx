@@ -56,14 +56,9 @@ const About = () => {
 
        {/* </div> */}
      
-        <Button
-              id="product-button"
-              title="DevFolio"
-              rightIcon={<TiLocationArrow />}
-              containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
-              />
-              </div>
-              <div className=" flex justify-center  px-2">
+       <a href="https://devfolio.co">
+        <img src="./img/_Dark.png"  className="h-12 mb-5" alt="DEVFOLIO LOGO" />
+       </a>
 
 <BentoGridThirdDemo/>
               </div>

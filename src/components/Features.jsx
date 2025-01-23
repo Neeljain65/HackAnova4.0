@@ -4,6 +4,7 @@ import Slider from "./Slider/Slider";
 import { FaqTeachers } from "./faq.jsx";
 import { faqs } from "../lib/data";
 import { BentoGridItem } from "./ui/bento-grid.jsx";
+import { img } from "framer-motion/client";
 
 export const BentoTilt = ({ children, className = "" }) => {
   const [transformStyle, setTransformStyle] = useState("");
@@ -118,16 +119,36 @@ const Features = () => (
       </div>
 
    
-      <div className="grid gap-4 w-full  md:gap-7 place-items-center">
+      <div className="grid gap-4 w-full  md:gap-7 lg:grid-cols-3">
   <BentoTilt className="bento-tilt_1 md:col-span-1">
     <BentoCard
       src="videos/feature-2.mp4"
       title={
-        <>
-          Devfoli<b>o</b>
-        </>
+        <img src="./img/_Colored.png" className="h-24" alt="DEVFOLIO LOGO"/>
       }
-      dlink="https://devfolio.co/home/"
+      dlink="https://devfolio.co"
+      description="Devfolio is a platform that helps people host and manage hackathons, and create online portfolios."
+      isComingSoon
+    />
+  </BentoTilt>
+  <BentoTilt className="bento-tilt_1 md:col-span-1">
+    <BentoCard
+      src="videos/feature-2.mp4"
+      title={
+        <img src="./img/Colored.png" className="h-24" alt="POLYGON LOGO"/>
+      }
+      dlink="https://polygon.technology/"
+      description="Devfolio is a platform that helps people host and manage hackathons, and create online portfolios."
+      isComingSoon
+    />
+  </BentoTilt>
+  <BentoTilt className="bento-tilt_1 md:col-span-1">
+    <BentoCard
+      src="videos/feature-2.mp4"
+      title={
+        <img src="./img/Untitled (3).png" alt="ETHINDIA LOGO" className="h-24"/>
+      }
+      dlink="https://ethindia.co "
       description="Devfolio is a platform that helps people host and manage hackathons, and create online portfolios."
       isComingSoon
     />
