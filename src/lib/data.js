@@ -70,7 +70,7 @@ export const faqs = [
 	
 	{
 		question: "Where will the hackathon be held?",
-		answer: "Hackverse 5.0 will be held at a designated venue, which will be communicated to selected participants."
+		answer: "Hackanova 4.0 will be held at TCET campus, Further will be communicated to selected participants."
 	}
 ];
 

@@ -36,7 +36,7 @@ const Contact = () => {
           <BsYoutube className="text-2xl text-white" />
           
           </a>
-          <a href="">
+          <a href="https://t.me/+T-xYOtvS4IwwY2U9">
           <BsTelegram className="text-2xl text-white"  />
         
           </a>
