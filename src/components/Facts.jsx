@@ -109,7 +109,7 @@ const SkeletonTwo = () => {
   });
 
   useEffect(() => {
-    const endDate = new Date("2025-02-16").getTime();
+    const endDate = new Date("2025-02-15").getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -135,7 +135,7 @@ const SkeletonTwo = () => {
       whileHover="hover"
       className="flex gap-2 flex-1 p-5 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2 text-white justify-center"
     >
-      <h1 className="text-4xl text-center font-semibold">Registration opens Till</h1>
+      <h1 className="text-4xl text-center font-semibold">Registration Are Open Till</h1>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-2xl mx-auto">
         <motion.div
           className=" flex flex-col items-center p-4 rounded-lg bg-black/20"
@@ -215,7 +215,7 @@ const SkeletonFour = () => {
         <FaClipboardList className="lg:text-7xl text-4xl text-green-600" />{" "}
         {/* Icon for Registrations */}
         <p className="sm:text-sm text-xs lg:text-xl text-center font-semibold text-neutral-500 mt-4">
-          1000+ 
+          850+ 
         </p>
         <p className="border border-green-500 bg-green-100 dark:bg-green-900/20 text-green-600 text-xs lg:text-xl rounded-full px-2 py-0.5 mt-4">
         Registrations
@@ -288,36 +288,57 @@ const SkeletonOne = () => {
   );
 };
 
-export default SkeletonOne;
-
-
 const SkeletonFive = () => {
   const [hovered, setHovered] = useState(false);
 
   return (
     <motion.div
       initial="initial"
-      whileHover="animate"
+      animate={hovered ? "hover" : "initial"}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col justify-center items-center relative"
+      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col justify-center items-center relative overflow-hidden"
     >
-      {hovered ? (
-        <div className="absolute inset-0 bg-black bg-opacity-80 flex justify-center items-center text-white p-4">
-          <p className="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      ) : (
-        <div className="relative">
-          <img
-            src="./img/TSDW.png"
-            alt="Logo"
-            className="max-w-full h-auto drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]"
-          />
-        </div>
-      )}
+      {/* Text Overlay on Hover */}
+      <motion.div
+        variants={{
+          initial: { opacity: 0 },
+          hover: { opacity: 1 },
+        }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className={`absolute inset-0 bg-black bg-opacity-80 flex justify-center items-center text-white p-4 ${
+          hovered ? "pointer-events-auto" : "pointer-events-none"
+        }`}
+      >
+        <p className="text-xl text-left">
+          Thakur College of Engineering & Technology (TCET), a Graded Autonomous
+          Linguistic Minority Institute, was established in AY 2001-02 with a
+          clear objective of providing Quality Technical Education in tune with
+          international standards and contemporary global requirements.
+        </p>
+      </motion.div>
+
+      {/* Image Section */}
+      <motion.div
+        variants={{
+          initial: { opacity: 1 },
+          hover: { opacity: 0 },
+        }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className="relative"
+      >
+        <img
+          src="./img/TSDW.png"
+          alt="Logo"
+          className="max-w-full h-auto drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]"
+        />
+      </motion.div>
     </motion.div>
   );
 };
+
+export default SkeletonFive;
+
 
 const items = [
   {
@@ -332,7 +353,7 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Registration Open Till 16th Feb 2025",
+    title: "Registrations are Open Till 15th Feb 2025",
     description: (
       <span className="text-sm">Pack your bags and get ready to hack.</span>
     ),
@@ -342,7 +363,7 @@ const items = [
   },
 
   {
-    title: "Facts & Figures from Hackanova 3.0",
+    title: "Hackanova 3.0 Stats",
     description: (
       <span className="text-sm">
         The numbers that speak for themselves.
