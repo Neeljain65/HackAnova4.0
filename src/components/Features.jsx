@@ -73,7 +73,7 @@ export const BentoCard = ({ src,dlink, title, description, isComingSoon }) => {
         <div>
           <h1 className="bento-title special-font bg-gradient-to-r from-orange-600 via-orange-500 to-indigo-400 inline-block text-transparent bg-clip-text">{title}</h1>
           {description && (
-            <p className="mt-3 max-w-64 text-xs md:text-base">{description}</p>
+            <p className="mt-3 max-w-72 text-xs md:text-base">{description}</p>
           )}
         </div>
 
@@ -108,7 +108,7 @@ const Features = () => (
   <section className="mt-5">
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
-        <p className="font-circular-web text-center text-2xl lg:text-4xl font-bold   text-blue-50">
+        <p className="font-circular-web text-center text-3xl lg:text-4xl font-bold   text-blue-50">
          Meet Our <span className="bg-purple-800"> Sponsors</span>
         
         </p>
@@ -128,7 +128,7 @@ const Features = () => (
               </>
             }
             dlink="https://devfolio.co/home/"
-            description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
+            description="Devfolio is a platform that helps people host and manage hackathons, and create online portfolios."
             isComingSoon
           />
         </BentoTilt>
@@ -142,7 +142,7 @@ const Features = () => (
               </>
             }
             dlink="https://polygon.technology/"
-            description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
+            description="Polygon (MATIC) is a cryptocurrency and scaling solution for the Ethereum blockchain."
             isComingSoon
           />
         </BentoTilt>
@@ -156,7 +156,7 @@ const Features = () => (
               </>
             }
             dlink="https://replit.com/"
-            description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
+            description="Replit is a cloud-based online integrated development environment (IDE) that allows users to write, run, and share code."
             isComingSoon
           />
         </BentoTilt>

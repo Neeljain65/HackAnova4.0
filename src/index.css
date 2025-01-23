@@ -10,7 +10,7 @@ body {
   background-color: #dfdff0;
   font-family: "General Sans", sans-serif;
 }
-
+*:root{scroll-behavior: smooth;}
 @layer base {
   @font-face {
     font-family: "circular-web";
