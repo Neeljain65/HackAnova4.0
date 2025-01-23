@@ -33,53 +33,53 @@ export function BentoGridThirdDemo() {
   );
 }
 
-const SkeletonOne = () => {
-  const variants = {
-    initial: {
-      x: 0,
-    },
-    animate: {
-      x: 10,
-      rotate: 5,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
-  const variantsSecond = {
-    initial: {
-      x: 0,
-    },
-    animate: {
-      x: -10,
-      rotate: -5,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
 
-  return (
-    <motion.div
-      initial="initial"
-      whileHover="animate"
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2 justify-center items-center"
-    >
-      <div className="flex flex-col items-start text-left gap-2">
-        <p className="text-5xl flex flex-col gap-2 md:text-4xl lg:text-5xl font-bold text-white">
-          Redefining
-          <p className="bg-gradient-to-r from-orange-500 to-purple-800 bg-clip-text text-transparent">
-            Norms
-          </p>
-        </p>
-        <p className="text-5xl font-bold text-white">Through</p>
-        <p className="text-5xl md:text-4xl lg:text-5xl font-bold text-white mt-2">
-          Intelligence
-        </p>
-      </div>
-    </motion.div>
-  );
-};
+//   const variants = {
+//     initial: {
+//       x: 0,
+//     },
+//     animate: {
+//       x: 10,
+//       rotate: 5,
+//       transition: {
+//         duration: 0.2,
+//       },
+//     },
+//   };
+//   const variantsSecond = {
+//     initial: {
+//       x: 0,
+//     },
+//     animate: {
+//       x: -10,
+//       rotate: -5,
+//       transition: {
+//         duration: 0.2,
+//       },
+//     },
+//   };
+
+//   return (
+//     <motion.div
+//       initial="initial"
+//       whileHover="animate"
+//       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2 justify-center items-center"
+//     >
+//       <div className="flex flex-col items-start text-left gap-2">
+//         <p className="text-5xl flex flex-col gap-2 md:text-4xl lg:text-5xl font-bold text-white">
+//           Redefining
+//           <p className="bg-gradient-to-r from-orange-500 to-purple-800 bg-clip-text text-transparent">
+//             Norms
+//           </p>
+//         </p>
+//         <p className="text-5xl font-bold text-white">Through</p>
+//         <p className="text-5xl md:text-4xl lg:text-5xl font-bold text-white mt-2">
+//           Intelligence
+//         </p>
+//       </div>
+//     </motion.div>
+//   );
+// };
 const SkeletonTwo = () => {
   const variants = {
     initial: {
@@ -169,36 +169,7 @@ const SkeletonTwo = () => {
     </motion.div>
   );
 };
-const SkeletonThree = () => {
-  const variants = {
-    initial: {
-      backgroundPosition: "0 50%",
-    },
-    animate: {
-      backgroundPosition: ["0, 50%", "100% 50%", "0 50%"],
-    },
-  };
-  return (
-    <motion.div
-      initial="initial"
-      animate="animate"
-      variants={variants}
-      transition={{
-        duration: 5,
-        repeat: Infinity,
-        repeatType: "reverse",
-      }}
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] rounded-lg bg-dot-black/[0.2] flex-col space-y-2"
-      style={{
-        background:
-          "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)",
-        backgroundSize: "400% 400%",
-      }}
-    >
-      <motion.div className="h-full w-full rounded-lg"></motion.div>
-    </motion.div>
-  );
-};
+
 const SkeletonFour = () => {
   const first = {
     initial: {
@@ -258,7 +229,7 @@ const SkeletonFour = () => {
         <FaTools className="lg:text-6xl text-4xl text-orange-600" />{" "}
         {/* Icon for Project Builds */}
         <p className="sm:text-sm lg:text-xl text-xs text-center font-semibold text-neutral-500 mt-4">
-          25+  
+          30+  
         </p>
         <p className="lg:text-xl border border-orange-500 bg-orange-100 dark:bg-orange-900/20 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
         Project
@@ -267,49 +238,87 @@ const SkeletonFour = () => {
     </motion.div>
   );
 };
+
+
+const SkeletonOne = () => {
+  const [hovered, setHovered] = useState(false);
+
+  return (
+    <motion.div
+      initial="initial"
+      animate={hovered ? "hover" : "initial"}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2 justify-center items-center relative overflow-hidden"
+    >
+      <motion.div
+        variants={{
+          initial: { opacity: 0 },
+          hover: { opacity: 1 },
+        }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className={`absolute inset-0 bg-black bg-opacity-80 flex justify-center items-center text-white p-4 ${
+          hovered ? "pointer-events-auto" : "pointer-events-none"
+        }`}
+      >
+        <p className="text-xl text-left">
+        Hackanova 4.0, organized by TSDW, is a hackathon focused on AI and Blockchain technologies, challenging participants to create innovative solutions under the theme "Redefining Norms Through Intelligence." It promotes collaboration, creativity, and competition, fostering the development of advanced tech solutions.</p>
+      </motion.div>
+
+      <motion.div
+        variants={{
+          initial: { opacity: 1 },
+          hover: { opacity: 0 },
+        }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className="flex flex-col items-start text-left gap-2"
+      >
+        <p className="text-5xl flex flex-col gap-2 md:text-4xl lg:text-5xl font-bold text-white">
+          Redefining
+          <span className="bg-gradient-to-r from-orange-500 to-purple-800 bg-clip-text text-transparent">
+            Norms
+          </span>
+        </p>
+        <p className="text-5xl font-bold text-white">Through</p>
+        <p className="text-5xl md:text-4xl lg:text-5xl font-bold text-white mt-2">
+          Intelligence
+        </p>
+      </motion.div>
+    </motion.div>
+  );
+};
+
+export default SkeletonOne;
+
+
 const SkeletonFive = () => {
-  const variants = {
-    initial: {
-      x: 0,
-    },
-    animate: {
-      x: 10,
-      rotate: 5,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
-  const variantsSecond = {
-    initial: {
-      x: 0,
-    },
-    animate: {
-      x: -10,
-      rotate: -5,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
+  const [hovered, setHovered] = useState(false);
 
   return (
     <motion.div
       initial="initial"
       whileHover="animate"
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col justify-center items-center"
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col justify-center items-center relative"
     >
-     <div class="relative">
-  <img 
-    src="./img/TSDW.png" 
-    alt="Logo" 
-    class="max-w-full  h-auto drop-shadow-[0_0_10px_rgba(255,255,255,0.7)] "
-  />
-</div>
-
+      {hovered ? (
+        <div className="absolute inset-0 bg-black bg-opacity-80 flex justify-center items-center text-white p-4">
+          <p className="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      ) : (
+        <div className="relative">
+          <img
+            src="./img/TSDW.png"
+            alt="Logo"
+            className="max-w-full h-auto drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]"
+          />
+        </div>
+      )}
     </motion.div>
   );
 };
+
 const items = [
   {
     title: "Hackanova 4.0",
@@ -333,7 +342,7 @@ const items = [
   },
 
   {
-    title: "Facts & Figures",
+    title: "Facts & Figures from Hackanova 3.0",
     description: (
       <span className="text-sm">
         The numbers that speak for themselves.

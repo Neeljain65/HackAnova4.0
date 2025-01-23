@@ -118,51 +118,22 @@ const Features = () => (
       </div>
 
    
-      <div className="grid gap-4 w-full lg:grid-cols-3 md:gap-7">
-        <BentoTilt className="bento-tilt_1  md:col-span-1 ">
-          <BentoCard
-            src="videos/feature-2.mp4"
-            title={
-              <>
-                Devfoli<b>o</b>
-              </>
-            }
-            dlink="https://devfolio.co/home/"
-            description="Devfolio is a platform that helps people host and manage hackathons, and create online portfolios."
-            isComingSoon
-          />
-        </BentoTilt>
+      <div className="grid gap-4 w-full  md:gap-7 place-items-center">
+  <BentoTilt className="bento-tilt_1 md:col-span-1">
+    <BentoCard
+      src="videos/feature-2.mp4"
+      title={
+        <>
+          Devfoli<b>o</b>
+        </>
+      }
+      dlink="https://devfolio.co/home/"
+      description="Devfolio is a platform that helps people host and manage hackathons, and create online portfolios."
+      isComingSoon
+    />
+  </BentoTilt>
+</div>
 
-        <BentoTilt className="bento-tilt_1   md:col-span-1 md:ms-0">
-          <BentoCard
-            src="videos/feature-3.mp4"
-            title={
-              <>
-                Polygon
-              </>
-            }
-            dlink="https://polygon.technology/"
-            description="Polygon (MATIC) is a cryptocurrency and scaling solution for the Ethereum blockchain."
-            isComingSoon
-          />
-        </BentoTilt>
-
-        <BentoTilt className="bento-tilt_1  md:col-span-1 md:me-0">
-          <BentoCard
-            src="videos/feature-4.mp4"
-            title={
-              <>
-              Replit
-              </>
-            }
-            dlink="https://replit.com/"
-            description="Replit is a cloud-based online integrated development environment (IDE) that allows users to write, run, and share code."
-            isComingSoon
-          />
-        </BentoTilt>
-
-        
-      </div>
     </div>
     <Slider/>
     <div className=" flex lg:mx-52 mt-24 mx-8">

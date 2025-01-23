@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import { TimelineDemo } from "./components/TimeLine";
 import { CanvasRevealEffectDemo } from "./components/Prizes";
 import Loader from "./components/Loader/Loader";
+import FloatingButton from "./components/FloatingButton"; // Import the FloatingButton component
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -27,6 +28,7 @@ function App() {
           <Contact />
         </>
       )}
+      <FloatingButton /> {/* Add the FloatingButton */}
     </main>
   );
 }
