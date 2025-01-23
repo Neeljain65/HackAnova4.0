@@ -109,7 +109,7 @@ const SkeletonTwo = () => {
   });
 
   useEffect(() => {
-    const endDate = new Date("2025-01-23").getTime();
+    const endDate = new Date("2025-02-16").getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -135,7 +135,7 @@ const SkeletonTwo = () => {
       whileHover="hover"
       className="flex gap-2 flex-1 p-5 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2 text-white justify-center"
     >
-      <h1 className="text-4xl text-center font-semibold">Registration Starts In</h1>
+      <h1 className="text-4xl text-center font-semibold">Registration opens Till</h1>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-2xl mx-auto">
         <motion.div
           className=" flex flex-col items-center p-4 rounded-lg bg-black/20"

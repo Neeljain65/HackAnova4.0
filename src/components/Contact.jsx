@@ -1,5 +1,5 @@
 
-import { BsDiscord, BsInstagram, BsYoutube } from "react-icons/bs";
+import { BsDiscord, BsInstagram, BsTelegram, BsYoutube } from "react-icons/bs";
 import AnimatedTitle from "./AnimatedTitle";
 import Button from "./Button";
 import { motion } from "framer-motion";
@@ -19,7 +19,7 @@ const Contact = () => {
         <div className="flex flex-row items-center justify-center gap-5 text-center">
          
           <p className="text-xl">Still Got Questions</p>
-          <a href="mailto:nj6097114@gmail.com?subject=Hackanova%20Quries">
+          <a href="mailto:tcet.hackanova@gmail.com?subject=Hackanova%20Queries%20">
 
           <Button title="contact us" containerClass=" cursor-pointer" />
           </a>
@@ -37,7 +37,7 @@ const Contact = () => {
           
           </a>
           <a href="">
-          <BsDiscord className="text-2xl text-white"  />
+          <BsTelegram className="text-2xl text-white"  />
         
           </a>
           </div>

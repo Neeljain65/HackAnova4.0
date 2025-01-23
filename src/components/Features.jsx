@@ -93,9 +93,9 @@ export const BentoCard = ({ src,dlink, title, description, isComingSoon }) => {
                 background: `radial-gradient(100px circle at ${cursorPosition.x}px ${cursorPosition.y}px, #656fe288, #00000026)`,
               }}
             />
-            <TiLocationArrow className="relative z-20" />
-            <a href={dlink} target="_blank" >
-              <p className="relative z-20">Visit</p>
+            <TiLocationArrow className="relative z-20 text-white" />
+            <a className="text-white" href={dlink} target="_blank" >
+              <p className="relative z-20 ">Visit</p>
             </a>
           </div>
         )}
