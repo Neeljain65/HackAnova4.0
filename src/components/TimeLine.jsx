@@ -17,7 +17,7 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "17th February 2025",
+      title: "15th February 2025",
       content: (
         <div>
           

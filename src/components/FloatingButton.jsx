@@ -8,7 +8,7 @@ const FloatingButton = () => {
   return (
     <button
       
-      className="fixed bottom-5 right-5 bg-blue-600 hover:bg-blue-700 text-white w-14 h-14 rounded-full shadow-2xl shadow-gray-500 flex justify-center items-center transition-transform transform hover:scale-110"
+      className="fixed bottom-5 right-5 bg-orange-600 hover:bg-orange-700 text-white w-14 h-14 rounded-full shadow-2xl shadow-gray-500 flex justify-center items-center transition-transform transform hover:scale-110"
     >
     <a href="https://t.me/+T-xYOtvS4IwwY2U9">
     <BsTelegram className="text-2xl" />

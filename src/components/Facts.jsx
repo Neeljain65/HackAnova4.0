@@ -261,7 +261,7 @@ const SkeletonOne = () => {
           hovered ? "pointer-events-auto" : "pointer-events-none"
         }`}
       >
-        <p className="text-xl text-left">
+        <p className="lg:text-xl text-sm text-left">
         Hackanova 4.0, organized by TSDW, is a hackathon focused on AI and Blockchain technologies, challenging participants to create innovative solutions under the theme "Redefining Norms Through Intelligence." It promotes collaboration, creativity, and competition, fostering the development of advanced tech solutions.</p>
       </motion.div>
 
@@ -310,7 +310,7 @@ const SkeletonFive = () => {
           hovered ? "pointer-events-auto" : "pointer-events-none"
         }`}
       >
-        <p className="text-xl text-left">
+        <p className="lg:text-xl text-sm  text-left">
           Thakur College of Engineering & Technology (TCET), a Graded Autonomous
           Linguistic Minority Institute, was established in AY 2001-02 with a
           clear objective of providing Quality Technical Education in tune with
