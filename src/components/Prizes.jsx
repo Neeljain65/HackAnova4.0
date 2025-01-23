@@ -115,7 +115,7 @@ const AceternityIcon = () => {
       height="65"
       viewBox="0 0 66 65"
       fill="none"
-      src="/images/1.png"
+      src="./images/1.png"
       xmlns="http://www.w3.org/2000/svg"
       className="w-36 object-cover  text-black dark:text-white group-hover/canvas-card:text-white ">
       
@@ -129,7 +129,7 @@ const AceternityIcon2 = () => {
       height="65"
       viewBox="0 0 66 65"
       fill="none"
-      src="/images/2.png"
+      src="./images/2.png"
       xmlns="http://www.w3.org/2000/svg"
       className="w-36 object-cover  text-black dark:text-white group-hover/canvas-card:text-white ">
       
@@ -143,7 +143,7 @@ const AceternityIcon3 = () => {
       height="65"
       viewBox="0 0 66 65"
       fill="none"
-      src="/images/3.png"
+      src="./images/3.png"
       xmlns="http://www.w3.org/2000/svg"
       className="w-36 object-cover  text-black dark:text-white group-hover/canvas-card:text-white ">
       

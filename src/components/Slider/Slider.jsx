@@ -44,7 +44,7 @@ export default function Slider() {
             className="flex-none w-[200px] h-full bg-white last:mr-0"
           >
             <img
-              src={`/Carosel/${filename}`}
+              src={`./Carosel/${filename}`}
               alt={`Image ${index + 1}`}
               className="w-full h-full object-cover"
             />

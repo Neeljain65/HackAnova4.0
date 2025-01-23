@@ -182,7 +182,7 @@ From setting up platforms to troubleshooting in real-time, the team fosters a co
      className={"mt-5"}
     header=
     {
-      <img src="/images/a.jpeg" alt="" className="h-full object-cover object-center aspect-auto-16/9" />
+      <img src="./images/a.jpeg" alt="" className="h-full object-cover object-center aspect-auto-16/9" />
     }
     />
     </div>

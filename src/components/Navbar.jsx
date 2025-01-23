@@ -70,7 +70,7 @@ const NavBar = () => {
         <nav className="flex size-full items-center justify-between p-4">
           {/* Logo and Product button */}
           <div className="flex items-center gap-7">
-            <img src="/img/TSDW.png" alt="logo" className="w-24 drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]" />
+            <img src="./img/TSDW.png" alt="logo" className="w-24 drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]" />
 
             
           </div>
@@ -96,7 +96,7 @@ const NavBar = () => {
               <audio
                 ref={audioElementRef}
                 className="hidden"
-                src="/audio/loop.mp3"
+                src="./audio/loop.mp3"
                 loop
               />
               {[1, 2, 3, 4].map((bar) => (

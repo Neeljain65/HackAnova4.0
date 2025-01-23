@@ -301,7 +301,7 @@ const SkeletonFive = () => {
     >
      <div class="relative">
   <img 
-    src="/img/TSDW.png" 
+    src="./img/TSDW.png" 
     alt="Logo" 
     class="max-w-full  h-auto drop-shadow-[0_0_10px_rgba(255,255,255,0.7)] "
   />
