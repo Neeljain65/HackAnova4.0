@@ -1,4 +1,4 @@
-
+.
 import { BsDiscord, BsInstagram, BsTelegram, BsYoutube } from "react-icons/bs";
 import AnimatedTitle from "./AnimatedTitle";
 import Button from "./Button";
@@ -36,7 +36,7 @@ const Contact = () => {
           <BsYoutube className="text-2xl text-white" />
           
           </a>
-          <a href="">
+          <a href="https://t.me/+T-xYOtvS4IwwY2U9"></a>
           <BsTelegram className="text-2xl text-white"  />
         
           </a>
